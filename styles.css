@@ -1,0 +1,19 @@
+body {
+font-family: "Times New Roman", Arial, Helvetica;
+font-size: 11pt;
+line-height: 13pt;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
