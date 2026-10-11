@@ -1,8 +1,7 @@
 :root {
     --background: #262626;
-    --layout: #7CB6B1;
-    --text: #faf6f6;
-    --header: #7CB6B1;
+    --text: #ffffff;
+    --header: #4ebcb3;
     --side: #363636;
 }
 
@@ -43,6 +42,7 @@ a:hover, a:focus {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 24px;
     padding: 10px 30px;
     background-color: var(--header);
@@ -52,19 +52,28 @@ img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    border: 4px solid var(--text);
 }
 
 aside {
     width: 190px;
-    padding: 20px 12px;
+    padding: 0px 12px;
     background-color: var(--side);
 }
 
 .sidetab {
-    
+    display: flex;
 }
 
 main {
-    
+    flex: 1;
+    padding: 0 20px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--header);
+    margin-top: -13.5px;
 }
 
