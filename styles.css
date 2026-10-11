@@ -30,7 +30,12 @@ h2 {
     color: var(--header);
 }
 
-ul, strong {
+ul {
+    list-style-type: "▸  ";
+    color: var(--text);
+}
+
+strong {
     color: var(--text);
 }
 
@@ -77,3 +82,29 @@ hr {
     margin-top: -13.5px;
 }
 
+/* Media Query */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        text-align:center;
+        padding: 20px;
+
+    }
+
+    aside {
+        width: auto;
+    }
+    
+    .sidetab {
+        flex-direction: column;
+
+    }
+    
+    main {
+        padding: 20px 12px 0 12px;
+    }
+}
