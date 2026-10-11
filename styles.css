@@ -1,7 +1,23 @@
+:root {
+    --background: #262626;
+    --layout: #7CB6B1;
+    --text: #faf6f6;
+    --header: #7CB6B1;
+    --side: #363636;
+}
+
 body {
-font-family: "Times New Roman", Arial, Helvetica;
-font-size: 11pt;
-line-height: 13pt;
+    font-family: "Times New Roman", Arial, Helvetica;
+    font-size: 11pt;
+    line-height: 13pt;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background);
+}
+
+p {
+    color: var(--text);
 }
 
 h1 {
@@ -12,8 +28,43 @@ h1 {
 h2 {
     font-size: 20px;
     letter-spacing: 0.5px;
+    color: var(--header);
+}
+
+ul, strong {
+    color: var(--text);
 }
 
 a:hover, a:focus {
     text-decoration: underline;
 }
+
+/* Layout */
+header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 10px 30px;
+    background-color: var(--header);
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+aside {
+    width: 190px;
+    padding: 20px 12px;
+    background-color: var(--side);
+}
+
+.sidetab {
+    
+}
+
+main {
+    
+}
+
